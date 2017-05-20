@@ -1,0 +1,14 @@
+C:\GIT\West_MB\ConsoleApplication1\bin\Debug\Grades.exe.config
+C:\GIT\West_MB\ConsoleApplication1\bin\Debug\Grades.exe
+C:\GIT\West_MB\ConsoleApplication1\bin\Debug\Grades.pdb
+C:\GIT\West_MB\ConsoleApplication1\obj\Debug\Grades.exe
+C:\GIT\West_MB\ConsoleApplication1\obj\Debug\Grades.pdb
+C:\GIT\West_MB\Grades\bin\Debug\Grades.exe.config
+C:\GIT\West_MB\Grades\bin\Debug\Grades.exe
+C:\GIT\West_MB\Grades\bin\Debug\Grades.pdb
+C:\GIT\West_MB\Grades\obj\Debug\Grades.csprojResolveAssemblyReference.cache
+C:\GIT\West_MB\Grades\obj\Debug\Grades.exe
+C:\GIT\West_MB\Grades\obj\Debug\Grades.pdb
+C:\GIT\GradeBookTutorial\Grades\bin\Debug\Grades.exe.config
+C:\GIT\GradeBookTutorial\Grades\obj\Debug\Grades.exe
+C:\GIT\GradeBookTutorial\Grades\obj\Debug\Grades.pdb

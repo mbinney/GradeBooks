@@ -1,0 +1,8 @@
+C:\GIT\West_MB\Grades.Test\bin\Debug\Grades.Test.dll
+C:\GIT\West_MB\Grades.Test\bin\Debug\Grades.Test.pdb
+C:\GIT\West_MB\Grades.Test\bin\Debug\Grades.exe
+C:\GIT\West_MB\Grades.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GIT\West_MB\Grades.Test\bin\Debug\Grades.pdb
+C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Test.dll
+C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Test.pdb
