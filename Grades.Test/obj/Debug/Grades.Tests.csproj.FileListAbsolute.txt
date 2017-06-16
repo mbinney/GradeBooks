@@ -6,3 +6,11 @@ C:\GIT\West_MB\Grades.Test\bin\Debug\Grades.pdb
 C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
 C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Test.dll
 C:\GIT\West_MB\Grades.Test\obj\Debug\Grades.Test.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\bin\Debug\Grades.Test.dll
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\bin\Debug\Grades.Test.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\bin\Debug\Grades.exe
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\bin\Debug\Grades.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\obj\Debug\Grades.Test.dll
+C:\GIT\github_mbinney\GradeBooks\Grades.Test\obj\Debug\Grades.Test.pdb

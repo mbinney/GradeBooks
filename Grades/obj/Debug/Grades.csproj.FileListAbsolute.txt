@@ -12,3 +12,9 @@ C:\GIT\West_MB\Grades\obj\Debug\Grades.pdb
 C:\GIT\GradeBookTutorial\Grades\bin\Debug\Grades.exe.config
 C:\GIT\GradeBookTutorial\Grades\obj\Debug\Grades.exe
 C:\GIT\GradeBookTutorial\Grades\obj\Debug\Grades.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades\bin\Debug\Grades.exe.config
+C:\GIT\github_mbinney\GradeBooks\Grades\obj\Debug\Grades.exe
+C:\GIT\github_mbinney\GradeBooks\Grades\obj\Debug\Grades.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades\bin\Debug\Grades.exe
+C:\GIT\github_mbinney\GradeBooks\Grades\bin\Debug\Grades.pdb
+C:\GIT\github_mbinney\GradeBooks\Grades\obj\Debug\Grades.csprojResolveAssemblyReference.cache
