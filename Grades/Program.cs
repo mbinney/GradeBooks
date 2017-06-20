@@ -19,11 +19,22 @@ namespace Grades
             Book.AddGrades(0);
 
             Stats = Book.ComputeStatistics();
-            Console.WriteLine("Average Grade: = " + Stats.AverageGrade);
-            Console.WriteLine("Low Grade:" + Stats.LowGrade);
-            Console.WriteLine("High Grade:" + Stats.HighGrade);
+            WriteResult("Average", Stats.AverageGrade);
+            WriteResult("Low", Stats.AverageGrade);
+            WriteResult("High", (int)Stats.AverageGrade);
             Console.ReadLine();
-        
+
         }
+
+        static void WriteResult(string description, int result)
+        {
+            Console.WriteLine(description + ":: " + result);
+        }
+
+        static void WriteResult(string description, float result)
+        {
+            Console.WriteLine("{0}: {1}", description, result);
+        }
+
     }
 }
