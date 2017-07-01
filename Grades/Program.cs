@@ -21,7 +21,7 @@ namespace Grades
             Stats = Book.ComputeStatistics();
             WriteResult("Average", Stats.AverageGrade);
             WriteResult("Low", Stats.AverageGrade);
-            WriteResult("High", (int)Stats.AverageGrade);
+            WriteResult("High", (int)Stats.AverageGrade); //float will be truncated not rounded.
             Console.ReadLine();
 
         }
