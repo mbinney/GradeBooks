@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,5 +65,12 @@ namespace Grades
 
         }
 
+        internal void WriteGrades(TextWriter destination)
+        {
+            for (int i = 0; i < Grades.Count; i++)
+            {
+                destination.WriteLine(Grades[i]);
+            }
+        }
     }
 }
