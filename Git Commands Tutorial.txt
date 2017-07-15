@@ -1,0 +1,120 @@
+https://www.youtube.com/watch?v=HVsySz-h9r4
+
+$git remote add origin https://github.com/mbinney/GradeBook.git
+ git config --list
+ git remote -v
+ 
+ --------------------------------------------
+ --working area.  - ie my local computer directory.
+ --------------------------------------------
+git init  
+
+git init bare --> read about this.  this is a remote repo i believe then clone it down then add file up to it?????
+
+ --------------------------------------------
+ --staging area -
+ --------------------------------------------
+ git add .gitignore     --> one file at a time
+ git status
+  
+ git add -A             --> ALL files
+ git status
+ 
+ -- remove from staging area.
+ git reset .gitignore   --> one file at a time
+ git status
+  
+ git reset              --> ALL files
+ git status
+ 
+ git commit -m "Initial Commit"
+ git status
+ 
+ git log                 --> shows commits
+
+ 
+ -----------------------------------
+ --Cloning a remote repo.
+ -----------------------------------
+ git clone https://github.com/mbinney/remote_repo.git .
+ 
+ git clone c:\files\repo.git .
+ 
+ git remote -v                      --> list info about repo
+ git branch -a                      --> list info about branches.
+ 
+ -----------------------------------
+ --pushing changes
+ -----------------------------------
+ git diff                            --> shows differences
+ 
+ git add -A                         --> to staging area.
+ git status
+ git commit -M "Initial commit"
+ 
+ git pull origin master               --> pull everybodys changes code 
+ git push origin master               --> push your code
+  
+ -----------------------------------
+ --Common Workflow
+ -----------------------------------
+ 
+ git branch calc-divide
+ git branch    --> shows the branches
+ 
+ git checkout calc-divide
+ git branch    --> shows working on calc_divide
+ git status
+ 
+ git add -ALL
+ git commit -m "Divide Function"   --> commited to local branch
+ git push -u origin calc-divide    --> push to the remote repo
+ git branch -a                     --> show all branches
+ 
+ -----------------------------------
+ --merge branch to master
+ -----------------------------------
+ git checkout master
+ git pull origin master
+ 
+ git branch --merged   --> checks to see if merged ok.
+ git merge calc-divide  --> while in master branch
+ git push origin master --> push to remote master branch
+ 
+ -----------------------------------
+ --deleting a branch
+ -----------------------------------
+ git branch --merged
+ git branch -d calc-divide
+ 
+ git push origin --delete calc-divide --> delete from remote repo
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# GradeBooks" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mbinney/GradeBooks.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/mbinney/GradeBooks.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
