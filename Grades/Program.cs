@@ -11,8 +11,9 @@ namespace Grades
         static void Main(string[] args)
         {
 
-            GradeBook Book = new GradeBook();
-            GradeStatistics Stats = new GradeStatistics();
+
+            //GradeBook Book = new GradeBook();
+            //GradeStatistics Stats = new GradeStatistics();
 
             //Book.NameChanged += new NameChangedDelegate(OnNameChanged); // overwritten with OnNameChanged2 except with +=
             //Book.NameChanged += new NameChangedDelegate(OnNameChanged2); // event keyword not = only +=
@@ -22,24 +23,57 @@ namespace Grades
             //Book.NameChanged += OnNameChanged2; //automatically create the delegate instance behind the scene will know it is a NameChangedDelegate
             //Book.NameChanged += OnNameChanged2;
             //Book.NameChanged -= OnNameChanged2; //will subscribe twice and remove once -= unscubscribe
+            
+            GradeTracker book = CreateGradeBook();
+            GradeStatistics Stats = new GradeStatistics();
 
-            Book.NameChanged += OnNameChanged; // Subscribe to event.
+            book.NameChanged += OnNameChanged; // Subscribe to event.
 
-            Book.Name = "Scott's Grade Book"; 
-            Book.Name = "Grade Book";
-            Book.AddGrades(100);
-            Book.AddGrades(50.5f);
-            Book.AddGrades(75);
-            Book.WriteGrades(Console.Out);
+            //GetBookName(Book);
+            AddGrades(book);
+            //Book.WriteGrades(Console.Out);
+            Stats = Save(book);
+            WriteResults(book, Stats);
 
-            Stats = Book.ComputeStatistics();
+        }
+
+        private static GradeTracker CreateGradeBook()
+        {
+            return new ThrowAwayGradeBook();
+        }
+
+        private static GradeStatistics Save(GradeTracker Book)
+        {
+            return Book.ComputeStatistics();
+        }
+
+        private static void WriteResults(GradeTracker Book, GradeStatistics Stats)
+        {
+
+            foreach (float grade in Book)
+            {
+                Console.WriteLine(grade);
+            }
+
             Console.WriteLine(Book.Name);
             WriteResult("Average", Stats.AverageGrade);
             WriteResult("Low", Stats.LowGrade);
             WriteResult("High", (int)Stats.HighGrade); //float will be truncated not rounded.
             WriteResult("", Stats.LetterGrade);
             Console.ReadLine();
+        }
 
+        private static void GetBookName(GradeTracker Book)
+        {
+            Book.Name = "Scott's Grade Book";
+            Book.Name = "Grade Book";
+        }
+
+        private static void AddGrades(GradeTracker Book)
+        {
+            Book.AddGrade(100);
+            Book.AddGrade(50.5f);
+            Book.AddGrade(75);
         }
 
         static void WriteResult(string description, string result)

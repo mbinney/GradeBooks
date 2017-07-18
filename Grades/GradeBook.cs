@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,47 +8,25 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    public class GradeBook
+    public class GradeBook : GradeTracker
     {
-        private List<float> Grades;
-        private string _name;
-        public event NameChangedDelegate NameChanged;
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                if (!String.IsNullOrEmpty(value))
-                {
-                    if (_name != value)
-                    {
-
-                        NameChangedEventArgs args = new NameChangedEventArgs();
-                        args.ExistingName = _name;
-                        args.NewName = value;                                                
-                        NameChanged(this, args);
-                    }
-                    _name = value;
-                }
-            }
-        }
-
+        protected List<float> Grades; //inherited -- protected keyword -- from derived class or this class only
+               
         public GradeBook()
         {
             _name = "Empty";
             Grades = new List<float>();        
         }
 
-        public void AddGrades(float grade)
+        public override void AddGrade(float grade)
         {
             Grades.Add(grade);
         }
 
-        public GradeStatistics ComputeStatistics()
+        public override GradeStatistics ComputeStatistics() //base clase has virtual and dirived class has override
         {
+
+            Console.WriteLine("Gradebook::ComputeStatistics");
 
             GradeStatistics Stats = new GradeStatistics();
 
@@ -65,7 +44,12 @@ namespace Grades
 
         }
 
-        internal void WriteGrades(TextWriter destination)
+        public override IEnumerator GetEnumerator()
+        {
+            return base.GetEnumerator();
+        }
+
+        public override void WriteGrades(TextWriter destination)
         {
             for (int i = 0; i < Grades.Count; i++)
             {
